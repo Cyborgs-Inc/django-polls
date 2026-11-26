@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "setup": "(python3 -c 'import django' 2>/dev/null || (apt-get update -qq && apt-get install -y -qq python3-django)) && python3 manage.py migrate --noinput",
+  "dev": "python3 manage.py runserver 0.0.0.0:$PORT",
+  "port": 8000,
+  "test": "python3 manage.py test"
+}
